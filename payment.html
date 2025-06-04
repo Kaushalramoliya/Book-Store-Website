@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+  <!-- Google Fonts for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/payment.css">
+  <style>
+
+  </style>
+</head>
+<body>
+  <header>
+    <h3>PAYMENT</h3>
+    <form>
+      <div class="accepted-cards">
+        <img src="img/visa.png" alt="Accepted Card" />
+        <img src="img/visa1.png" alt="Accepted Card" />
+      </div>
+      <label for="card-number">Credit Card Number</label>
+      <input type="text" id="card-number" placeholder="Enter card number" />
+      
+      <label for="exp-month">Expiration Month</label>
+      <input type="text" id="exp-month" placeholder="Enter month" />
+      
+      <div class="inline-fields">
+        <div class="field-group">
+          <label for="exp-year">Expiration Year</label>
+          <select id="exp-year">
+            <option value="">Choose Year...</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="cvv">CVV</label>
+          <input type="number" id="cvv" placeholder="CVV" />
+        </div>
+      </div>
+      <a href="conform.html" class="button">SUBMIT</a>
+    </form>
+  </header>
+</body>
+</html>

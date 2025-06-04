@@ -1,0 +1,101 @@
+    /* Reset default browser styling */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #403f3f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      header {
+        background-color: #fff;
+        width: 100%;
+        max-width: 500px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      header h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #34495e;
+        font-size: 26px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      form label {
+        font-weight: 500;
+        color: #333;
+        margin-bottom: 5px;
+      }
+      form input,
+      form select {
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        transition: border-color 0.3s ease;
+      }
+      form input:focus,
+      form select:focus {
+        border-color: #34495e;
+        outline: none;
+      }
+      .accepted-cards {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+      .accepted-cards img {
+        max-width: 80px;
+        height: auto;
+      }
+      .inline-fields {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+      .inline-fields .field-group {
+        flex: 1;
+        min-width: 120px;
+      }
+      .button {
+        text-align: center;
+        background-color: #34495e;
+        color: #fff;
+        border: none;
+        padding: 12px 25px;
+        font-size: 16px;
+        border-radius: 12px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        align-self: center;
+      }
+      .button:hover {
+        background-color: #2c3e50;
+      }
+      @media (max-width: 480px) {
+        header {
+          padding: 20px;
+        }
+        form input,
+        form select {
+          font-size: 14px;
+          padding: 10px;
+        }
+        .button {
+          font-size: 14px;
+          padding: 10px;
+        }
+      }

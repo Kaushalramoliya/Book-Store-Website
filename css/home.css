@@ -1,0 +1,172 @@
+/* Reset some defaults */
+body {
+    background-image: url('../img/bookbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  /* Navbar container - Existing styles */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(3, 66, 125, 0.9);
+    padding: 10px 20px;
+    position: relative;
+  }
+  .navbar .logo img {
+    width: 100px;
+  }
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  .navbar ul li {
+    position: relative;
+    margin: 0 15px;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+  }
+  .navbar ul li a:hover,
+  .navbar ul li.active a {
+    background: #0a86ac;
+    border-radius: 3px;
+  }
+  .navbar ul li .dropdown {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: rgba(3, 66, 125, 0.9);
+    min-width: 150px;
+    border-radius: 3px;
+    z-index: 100;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  .navbar ul li:hover .dropdown,
+  .navbar ul li .dropdown:hover {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+  .navbar ul li .dropdown li {
+    width: 100%;
+    margin: 0;
+  }
+  .navbar ul li .dropdown li a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .navbar ul li .dropdown li:last-child a {
+    border-bottom: none;
+  }
+
+  /* New styles for added sections */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  .hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  .hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  .hero .btn {
+    background: #0a86ac;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+  }
+  .hero .btn:hover {
+    background: #0a669c;
+  }
+  .section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px 10%;
+    border-radius: 5px;
+  }
+  .featured-books h2,
+  .promotions h2,
+  .testimonials h2,
+  .about-us h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #03427d;
+    font-size: 2em;
+  }
+  .book-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .book {
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .book img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+  .promotions p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #d9534f;
+    font-weight: bold;
+  }
+  .search-bar {
+    text-align: center;
+  }
+  .search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .search-bar button {
+    padding: 10px 20px;
+    background: #0a86ac;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .testimonials blockquote {
+    margin: 15px 0;
+    font-style: italic;
+    color: #333;
+    font-size: 1.1em;
+  }
+  .about-us a {
+    color: #0a86ac;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .about-us a:hover {
+    text-decoration: underline;
+  }
